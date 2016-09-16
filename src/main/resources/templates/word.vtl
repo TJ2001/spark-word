@@ -1,0 +1,13 @@
+<h1>$word.getTerm()</h1>
+
+<h2>$word.getPartsOfSpeech</h2>
+
+<h2>$word.getPronunciation</h2>
+
+<ol>
+  #foreach($definition in $word.getDefinitions())
+    <li>$definition.getAnnotation()</li>
+  #end
+</ol>
+
+<p><a href="/">Home</a></p>

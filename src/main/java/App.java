@@ -31,13 +31,22 @@ public class App {
 
     post("/words", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
+      // creating new word with params from form
       String term = request.queryParams("term");
       String partsOfSpeech = request.queryParams("partsOfSpeech");
       String pronunciation = request.queryParams("pronunciation");
       Word newWord = new Team(term, partsOfSpeech, pronunciation);
-
+      // end creating new word
       response.redirect("/words" + newWord.getId());
       return new ModelAndView(model, layout);
     }, new VeloictyTemplateEngine());
+
+    get("/words/:id", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      Word word = Word.find(Integer.parseInt(request.params(":id")));
+      model.put("word", word);
+      model.put("template", "templates/word.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
   }
 }
