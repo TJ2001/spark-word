@@ -47,5 +47,27 @@ public class WordTest{
     assertEquals(0, Word.all().size());
   }
 
-  
+  @Test
+  public void getId_wordInstantiatesWithId_1() {
+    assertEquals(1, mWord.getId());
+  }
+
+  @Test
+  public void find_returnsDefinitionWithSameId_anotherWord() {
+    Word anotherWord = new Word("Apex", "Noun", "ey-peks");
+    assertEquals(anotherWord, Word.find(anotherWord.getId()));
+  }
+
+  @Test
+  public void getDefinition_initiallyReturnsEmptyList_ArrayList(){
+    assertEquals(0, mWord.getDefinitions().size());
+  }
+
+  @Test
+  public void addDefinition_addDefinitionToList_true(){
+    Word.clear();
+    Definition testDefinition = new Definition("to keep going.");
+    mWord.addDefinition(testDefinition);
+    assertTrue(mWord.getDefinitions().contains(testDefinition));
+  }
 }
