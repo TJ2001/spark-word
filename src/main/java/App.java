@@ -35,11 +35,11 @@ public class App {
       String term = request.queryParams("term");
       String partsOfSpeech = request.queryParams("partsOfSpeech");
       String pronunciation = request.queryParams("pronunciation");
-      Word newWord = new Team(term, partsOfSpeech, pronunciation);
+      Word newWord = new Word(term, partsOfSpeech, pronunciation);
       // end creating new word
-      response.redirect("/words" + newWord.getId());
+      response.redirect("/words/" + newWord.getId());
       return new ModelAndView(model, layout);
-    }, new VeloictyTemplateEngine());
+    }, new VelocityTemplateEngine());
 
     get("/words/:id", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
