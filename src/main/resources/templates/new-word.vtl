@@ -1,0 +1,12 @@
+<h1>Add a new word!</h1>
+
+<form action="/words" method="post">
+  <input id="wordId" name="wordId" type="hidden" value="$word.getId()">
+  <label for="term">Word:</label>
+  <input id="term" name="term" type="text" class="form-control">
+  <label for="partsOfSpeech">Parts Of Speech:</label>
+  <input id="partsOfSpeech" name="partsOfSpeech" type="text" class="form-control">
+  <label for="pronunciation">Pronunciation</label>
+  <input id="pronunciation" name="pronunciation" type="text" class="form-control">
+  <button type="submit" class="btn btn-danger">Add Word</button>
+</form>

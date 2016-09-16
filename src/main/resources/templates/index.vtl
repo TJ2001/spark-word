@@ -1,0 +1,6 @@
+<h1>Tim's Hot Words</h1>
+<br>
+  #foreach ($word in $words)
+    <a href="/words/$word.getId()"><h2>$word.getTerm()</h2></a>
+  #end
+<a href="words/new">Add A New Word</a>
