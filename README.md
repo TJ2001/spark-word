@@ -18,8 +18,8 @@ _The purpose of this application is to take inputs, specifically words and defin
 
 ## Specifications
 
-Input: Words and Definitions
-Output: Display general view words on the homepage and definitions in a more detailed view of word sections through dynamic routing.
+* _Input: Words and Definitions._
+* _Output: Display general view words on the homepage and definitions in a more detailed view of word sections through dynamic routing._
 
 ## Known Bugs
 
