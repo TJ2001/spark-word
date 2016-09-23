@@ -1,32 +1,25 @@
 # _WordUp_
 
-#### _It will generate the cost of an event planned by the user, {September 9, 2016}_
+#### _It will generate the cost of an event planned by the user, {September 16, 2016}_
 
 #### By _**Tim Jung**_
 
 ## Description
 
-_The purpose of this application is to take inputs from the user to calculate cost of an event._
+_The purpose of this application is to take inputs, specifically words and definitions, from the user and display them in a visual output._
 
 ## Setup/Installation Requirements
 
 * _Download zip or clone files to desktop._
-* _Have Gradle installed on system._
-* _Open console to the project package folder and run "gradle javaCompile" ._
-* _Open console to build/classes/main/ within the project folder._
-* _Run command "java App"._
-
-_Everything should just work fine, if directions are followed._
+* _Have Gradle installed on the system._
+* _Open console to the project package folder and run "gradle run" ._
+* _Go to http://localhost:4567/ in a browser preferably Chrome._
+* _Everything should just work fine, if directions are followed._
 
 ## Specifications
 
-|Behavior|Input|Output|
-|---|---|---|
-|The application will accept number of guest and return cost for the guest.| 1 | 5 |
-|The application will accept type of food and return cost per plate. | Japanese | 10 |
-|The application will accept beverage options and return cost per guest. | S | 2 |
-|The application will accept types of entertainment options and return cost. | c | 100 |
-|The application will accept number of guests, beverage, food type, and entertainment option. | 20, Italian, b, s | 450 |
+Input: Words and Definitions
+Output: Display general view words on the homepage and definitions in a more detailed view of word sections through dynamic routing.
 
 ## Known Bugs
 

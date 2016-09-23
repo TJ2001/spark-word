@@ -9,7 +9,7 @@ public class App {
     staticFileLocation("/public");
     String layout = "templates/layout.vtl";
     Word wordOne = new Word ("Drive", "Verb", "drahyv");
-    Word wordTwo = new Word ("Apex", "Noun", "ey-peks")
+    Word wordTwo = new Word ("Apex", "Noun", "ey-peks");
 
     get("/", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
@@ -66,7 +66,7 @@ public class App {
 
       String annotation = request.queryParams("annotation");
       Definition newDefinition = new Definition(annotation);
-      word.addDefinition`(newDefinition);
+      word.addDefinition(newDefinition);
 
       model.put("word", word);
       response.redirect("/words/" + wordId);
