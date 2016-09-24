@@ -1,6 +1,6 @@
 # _WordUp_
 
-#### _It will generate the cost of an event planned by the user, {September 16, 2016}_
+#### _It will list words and their definitions, {September 16, 2016}_
 
 #### By _**Tim Jung**_
 
